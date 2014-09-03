@@ -11,10 +11,13 @@ post_address_link: "https://goo.gl/maps/rltaY"
 team_members:
   - name: Martina Calajová
     email: martina@leskancu.cz
+    img: martina
   - name: Michal Kukačka
     email: michal@leskancu.cz
+    img: michal
   - name: Lucie Zelená
     email: lucie@leskancu.cz
+    img: lucie
 
 baseurl: "" # the subpath of your site, e.g. /blog/
 url: "http://leskancu.cz" # the base hostname & protocol for your site

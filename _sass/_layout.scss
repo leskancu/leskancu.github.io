@@ -1,0 +1,29 @@
+.site-header {
+  position: relative;
+  height: 200px;
+}
+
+.site-logo {
+  position: absolute;
+  top: 42px;
+  left: 50px;
+}
+
+.content-wrapper {
+  float: left;
+  margin-left: 171px;
+  width: 789px;
+}
+
+.site-nav-links {
+  margin: 45px 0 0 0;
+  list-style-type: none;
+  width: 163px;
+  float: left;
+  font-size: 15px;
+  line-height: 17px;
+}
+
+.site-nav-address-img {
+  margin-top: 4px;
+}
