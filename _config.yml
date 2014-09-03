@@ -18,6 +18,7 @@ team_members:
 
 baseurl: "" # the subpath of your site, e.g. /blog/
 url: "http://leskancu.cz" # the base hostname & protocol for your site
+facebook_url: "https://www.facebook.com/leskancu"
 
 # Build settings
 markdown: kramdown
