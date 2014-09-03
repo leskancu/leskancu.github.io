@@ -1,0 +1,27 @@
+# Site settings
+title: Les kanců
+email: info@leskancu.cz
+description: >
+  Jsme Les kanců, grafické studio ze Sudet.
+
+post_address: |
+  Bozděchova 4
+  400 01 Ústí nad Labem
+post_address_link: "https://goo.gl/maps/rltaY"
+team_members:
+  - name: Martina Calajová
+    email: martina@leskancu.cz
+  - name: Michal Kukačka
+    email: michal@leskancu.cz
+  - name: Lucie Zelená
+    email: lucie@leskancu.cz
+
+baseurl: "" # the subpath of your site, e.g. /blog/
+url: "http://leskancu.cz" # the base hostname & protocol for your site
+
+# Build settings
+markdown: kramdown
+
+highlighter: pygments
+safe: true
+lsi: false

@@ -1,0 +1,24 @@
+<header class="site-header">
+
+  <div class="wrapper">
+
+    <a class="site-title" href="{{ site.baseurl }}/">{{ site.title }}</a>
+
+    <ul>
+      {% for person in site.team_members %}
+        <li>
+          <a href="mailto:{{ person.email }}">{{ person.name }}</a>
+        </li>
+      {% endfor %}
+    </ul>
+    <ul>
+      <li>
+        <a href="mailto:{{ site.email }}">{{ site.email }}</a>
+      </li>
+      <li>
+        <a href="{{ site.post_address_link }}">{{ site.post_address | newline_to_br }}</a>
+      </li>
+    </ul>
+  </div>
+
+</header>
