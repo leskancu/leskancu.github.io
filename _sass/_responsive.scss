@@ -1,0 +1,81 @@
+%responsive-img {
+  height: auto;
+  widows: auto;
+}
+
+.site-logo-img {
+  @extend %responsive-img;
+  max-height: 61px;
+}
+
+.site-nav-person-img {
+  @extend %responsive-img;
+  max-height: 13px;
+}
+
+.site-nav-address-img {
+  @extend %responsive-img;
+  max-height: 29px;
+}
+
+.home-text-img {
+  @extend %responsive-img;
+  max-height: 116px;
+}
+
+.home-like-img {
+  @extend %responsive-img;
+  max-height: 24px;
+}
+
+body {
+  zoom: 1;
+}
+
+@function power ($x, $n) {
+    $ret: 1;
+
+    @if $n >= 0 {
+        @for $i from 1 through $n {
+            $ret: $ret * $x;
+        } 
+    } @else {
+        @for $i from $n to 0 {
+            $ret: $ret / $x;
+        }
+    }
+
+    @return $ret;
+}
+
+$responsive-scale: 1.104085;
+
+@mixin scale-site($iteration) {
+  body {
+    zoom: power($responsive-scale, $iteration);
+  }
+}
+
+@media (min-width: 1080px) {
+  @include scale-site(1);
+}
+
+@media (min-width: 1200px) {
+  @include scale-site(2);
+}
+
+@media (min-width: 1440px) {
+  @include scale-site(4);
+}
+
+@media (min-width: 1560px) {
+  @include scale-site(5);
+}
+
+@media (min-width: 1800px) {
+  @include scale-site(6);
+}
+
+@media (min-width: 1920px) {
+  @include scale-site(7);
+}

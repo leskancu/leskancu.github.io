@@ -1,19 +1,19 @@
 <header class="site-header">
-  <a class="site-logo" href="{{ site.baseurl }}/"><img src="/img/nav/logo.png" height="61" title="{{ site.title }}" alt="{{ site.title }}"></a>
+  <a class="site-logo" href="{{ site.baseurl }}/"><img class="site-logo-img" src="/img/nav/logo.png" title="{{ site.title }}" alt="{{ site.title }}"></a>
   <div class="content-wrapper">
     <ul class="site-nav-links">
       {% for person in site.team_members %}
         <li>
-          <a href="mailto:{{ person.email }}"><img height="13" src="/img/nav/{{ person.img }}.png" alt="{{ person.name }}" title="{{ person.name }}"></a>
+          <a href="mailto:{{ person.email }}"><img class="site-nav-person-img" src="/img/nav/{{ person.img }}.png" alt="{{ person.name }}" title="{{ person.name }}"></a>
         </li>
       {% endfor %}
     </ul>
     <ul class="site-nav-links">
       <li>
-        <a href="mailto:{{ site.email }}"><img height="13" src="/img/nav/email.png" alt="{{ site.email }}" title="{{ site.email }}"></a>
+        <a href="mailto:{{ site.email }}"><img class="site-nav-person-img" src="/img/nav/email.png" alt="{{ site.email }}" title="{{ site.email }}"></a>
       </li>
       <li>
-        <a href="{{ site.post_address_link }}"><img class="site-nav-address-img" src="/img/nav/post-address.png" height="29" alt="{{ site.post_address }}" title="{{ site.post_address }}"></a>
+        <a href="{{ site.post_address_link }}"><img class="site-nav-address-img" src="/img/nav/post-address.png" alt="{{ site.post_address }}" title="{{ site.post_address }}"></a>
       </li>
     </ul>
   </div>
